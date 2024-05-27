@@ -1,0 +1,145 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background: url('imagens/social/bkg.png') no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+header {
+  background: #114018;
+  display: flex;
+  align-items: center;
+  padding: 0 48px;
+}
+
+header>span,
+header>.menu-container>span {
+  font-size: 24px;
+  color: white;
+  width: 100px;
+  text-align: center;
+}
+
+header>.logo-container {
+  flex-grow: 1;
+  text-align: center;
+}
+
+header>.menu-container {
+  display: flex;
+  align-items: center;
+}
+
+header>.menu-container>img {
+  display: block;
+  min-width: 32px;
+  height: 32px;
+}
+
+header>.menu-container>span {
+  font-size: 14px;
+  width: 120px;
+}
+
+nav {
+  background: #41673c;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 4px 0;
+}
+
+nav>a {
+  display: inline-block;
+  background: #114018;
+  padding: 4px 24px;
+  min-width: 102px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 15px;
+}
+
+nav>a.selected {
+  border: 1px solid white;
+}
+
+.content {
+  box-sizing: border-box;
+  position: fixed;
+  width: 100%;
+  overflow-y: auto;
+  height: calc(100% - 54px - 34px);
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: rgb(197, 189, 153);
+  font-size: 24px;
+  font-weight: 700;
+  gap: 32px;
+  padding: 72px 0;
+}
+
+.content>div {
+  display: flex;
+  max-width: 1024px;
+  width: 100%;
+}
+
+hr {
+  border: 1px solid rgb(197, 189, 153);
+}
+
+.first-row__image,
+.second-row__image {
+  position: relative;
+  width: 370px;
+  flex-shrink: 0;
+}
+
+/* Hexagon */
+.hexagon {
+  width: 340px;
+  /* Adjust the size as needed */
+  height: 340px;
+  /* Height for a perfect hexagon with 200px width when aligned horizontally */
+  overflow: hidden;
+  margin: 0 auto;
+  /* Center the hexagon if desired */
+  position: absolute;
+}
+
+.hexagon img,
+.hexagon div {
+  width: 100%;
+  height: 86.594%;
+  object-fit: cover;
+  /* Ensures the image covers the hexagon area */
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+.hexagon--small {
+  width: 210px;
+  height: 210px;
+}
+
+.hexagon--small>div {
+  background: rgb(142, 164, 117);
+}
+
+.hexagon--big {
+  top: 80px;
+  left: 20px;
+}

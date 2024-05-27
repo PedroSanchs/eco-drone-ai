@@ -1,0 +1,138 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif;
+}
+
+body {
+  background: url('imagens/social/bkg.png') no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header {
+  background: #114018;
+  display: flex;
+  align-items: center;
+  padding: 0 48px;
+}
+
+header>span,
+header>.menu-container>span {
+  font-size: 24px;
+  color: white;
+  width: 100px;
+  text-align: center;
+}
+
+header>.logo-container {
+  flex-grow: 1;
+  text-align: center;
+}
+
+header>.menu-container {
+  display: flex;
+  align-items: center;
+}
+
+header>.menu-container>img {
+  display: block;
+  min-width: 32px;
+  height: 32px;
+}
+
+header>.menu-container>span {
+  font-size: 14px;
+  width: 120px;
+}
+
+nav {
+  background: #41673c;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 4px 0;
+}
+
+nav>a {
+  display: inline-block;
+  background: #114018;
+  padding: 4px 24px;
+  min-width: 102px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 15px;
+}
+
+nav>a.selected {
+  border: 1px solid white;
+}
+
+section.content {
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.content>h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: rgb(197, 189, 153);
+}
+
+.content-grid {
+  gap: 48px;
+  padding: 4px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-grid>div {
+  text-align: center;
+}
+
+.content-grid>div>span {
+  font-size: 24px;
+  color: rgb(197, 189, 153);
+  font-weight: 700;
+}
+
+.content-grid>div>hr {
+  border: 1px solid white;
+  width: 90%;
+}
+
+.hexagon {
+  width: 200px;
+  /* Adjust the size as needed */
+  height: 200px;
+  /* Height for a perfect hexagon with 200px width when aligned horizontally */
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  /* Center the hexagon if desired */
+
+}
+
+.hexagon img {
+  width: 100%;
+  height: 86.594%;
+  object-fit: cover;
+  /* Ensures the image covers the hexagon area */
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+.content>div>p {
+  background: rgba(17, 64, 24, 0.8);
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 24px;
+}

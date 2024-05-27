@@ -1,0 +1,140 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif;
+}
+
+body {
+  background: url('imagens/social/bkg.png') no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header {
+  background: #114018;
+  display: flex;
+  align-items: center;
+  padding: 0 48px;
+}
+
+header>span,
+header>.menu-container>span {
+  font-size: 24px;
+  color: white;
+  width: 100px;
+  text-align: center;
+}
+
+header>.logo-container {
+  flex-grow: 1;
+  text-align: center;
+}
+
+header>.menu-container {
+  display: flex;
+  align-items: center;
+}
+
+header>.menu-container>img {
+  display: block;
+  min-width: 32px;
+  height: 32px;
+}
+
+header>.menu-container>span {
+  font-size: 14px;
+  width: 120px;
+}
+
+nav {
+  background: #41673c;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 4px 0;
+}
+
+nav>a {
+  display: inline-block;
+  background: #114018;
+  padding: 4px 24px;
+  min-width: 102px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 15px;
+}
+
+nav>a.selected {
+  border: 1px solid white;
+}
+
+.content {
+  min-height: 600px;
+  color: rgb(197, 189, 153);
+  display: flex;
+  flex-direction: column;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.content h1 {
+  font-size: 48px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  row-gap: 24px;
+}
+
+.partner {
+  width: 240px;
+  height: 130px;
+  border-radius: 20px;
+  background-image: url('imagens/partners/amazon.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.partner:nth-child(2) {
+  background-image: url('imagens/partners/ambev.png');
+}
+
+.partner:nth-child(3) {
+  background-image: url('imagens/partners/bb.png');
+}
+
+.partner:nth-child(4) {
+  background-image: url('imagens/partners/boticario.png');
+}
+
+.partner:nth-child(5) {
+  background-image: url('imagens/partners/bradesco.webp');
+}
+
+.partner:nth-child(6) {
+  background-image: url('imagens/partners/faber.png');
+}
+
+.partner:nth-child(7) {
+  background-image: url('imagens/partners/telha.png');
+}
+
+.partner:nth-child(8) {
+  background-image: url('imagens/partners/vale.png');
+  background-size: contain;
+  background-color: white;
+}
+
+.partner:nth-child(9) {
+  background-image: url('imagens/partners/votorantim.webp');
+  background-size: contain;
+  background-color: white;
+}
